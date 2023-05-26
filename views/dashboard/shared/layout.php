@@ -6,6 +6,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Admin</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -22,7 +23,7 @@
         <div class="expanded row">
 
             <div class="col-md-2 logo">
-                <img src="<?php echo $url; ?>/assets/img/logo.png">
+                <img src="<?php echo $url; ?>/assets/img/caravan.svg">
             </div>
 
             <div class="col-md-10 navbar-right text-center" style="background-color: #232323;">
@@ -31,7 +32,7 @@
                 </div>
 
                 <div class="mobile logo">
-                    <img src="<?php echo $url; ?>/assets/img/logo.png">
+                    <img src="<?php echo $url; ?>/assets/img/caravan.svg">
                 </div>
 
                 <ul class="nav pull-right">
