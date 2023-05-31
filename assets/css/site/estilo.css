@@ -242,7 +242,7 @@ body {
   }
   
   #home-quote {
-    background: url('../img/bg-quote.jpg') center center;
+    background: url('../../img/bg-quote.jpg') center center;
     background-size: cover;
   }
   
@@ -256,4 +256,4 @@ body {
     .fixed-top {
       position: relative;
     }
-  }
+}

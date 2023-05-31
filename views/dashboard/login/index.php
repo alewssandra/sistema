@@ -49,7 +49,7 @@
                         </div>
 
                         <!-- Link para cadastro -->
-                        <p> Você não possui cadastro? <a href="<?php echo $url; ?>/dashboard/register" >Clique Aqui!</a></p>
+                        <p> Você não possui cadastro? <a href="<?php echo $url; ?>/dashboard/register/index.php" >Clique Aqui!</a></p>
 
                         <!-- Botão de login -->
                         <div class="btn btn-success btn-login">Entrar</div>
