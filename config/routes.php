@@ -4,6 +4,7 @@
 $commonRoutes = array(
     '/'                             => 'SiteController/home',
     'dashboard'                     => 'PanelController/home',
+    'dashboard/contato'             => 'SiteController/contato',
     'dashboard/login'               => 'PanelController/login',
     'logout'                        => 'PanelController/logout',
     'dashboard/contatos'            => 'PanelController/contacts',

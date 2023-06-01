@@ -182,6 +182,6 @@
     </div>
     <div class="text-center my-4">
       <p class="small m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
-      <a class="btn btn-primary btn-lg" href="<?php echo $url; ?>/views/site/contato/index.php">Entre em Contato</a>
+      <a class="btn btn-primary btn-lg" href="<?php echo $url; ?>/dashboard/contato">Entre em Contato</a>
     </div>
 </section>

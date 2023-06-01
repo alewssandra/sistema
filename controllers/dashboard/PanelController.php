@@ -17,7 +17,7 @@ class PanelController extends Controller
             $this->setLayout('dashboard/shared/layout.php');
             $this->view('dashboard/home/index.php');
         } else {
-            header('Location: ' . $this->helpers['URLHelper']->getURL('/dashboard/login'));
+            header('Location: ' . $this->helpers['URLHelper']->getURL('/'));
         }
     }
 

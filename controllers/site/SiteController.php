@@ -12,16 +12,14 @@ class SiteController extends Controller
     public function home()
     {
 
-        $images = ['imagem1', 'imagem2', 'imagem3'];
-        $description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar varius duiLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar varius dui id, convallis iaculis eros. Praesent porta lacinia
-        elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor turpis, pulvinar varius dui id, convallis iaculis eros. Praesent porta lacinia elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Pellentesque dolor turpis, pulvinar varius dui id, convallis iaculis eros. Praesent porta lacinia elementum.";
-
         $this->setLayout('site/shared/layout.php');
 
-        $this->view('site/home/index.php', array(
-            'images' => $images,
-            'description' => $description
-        ));
+        $this->view('site/home/index.php');
+    }
+
+    public function contato()
+    {
+        $this->setLayout('site/shared/layout.php');
+        $this->view('site/contato/index.php');
     }
 }
