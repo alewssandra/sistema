@@ -3,9 +3,11 @@
 // Rotas comuns para requisições GET
 $commonRoutes = array(
     '/'                             => 'SiteController/home',
-    'dashboard'                     => 'PanelController/home',
     'contato'                       => 'SiteController/contato',
     'local'                         => 'SiteController/local',
+    'planos'                        => 'SiteController/planos',
+    'inscricao'                     => 'SiteController/inscricao',
+    'dashboard'                     => 'PanelController/home',
     'dashboard/login'               => 'PanelController/login',
     'logout'                        => 'PanelController/logout',
     'dashboard/contatos'            => 'PanelController/contacts',

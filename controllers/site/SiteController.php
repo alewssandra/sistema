@@ -28,4 +28,16 @@ class SiteController extends Controller
         $this->setLayout('site/shared/layout.php');
         $this->view('site/local/index.php');
     }
+
+    public function planos()
+    {
+        $this->setLayout('site/shared/layout.php');
+        $this->view('site/planos/index.php');
+    }
+
+    public function inscricao()
+    {
+        $this->setLayout('site/shared/layout.php');
+        $this->view('site/inscricao/index.php');
+    }
 }

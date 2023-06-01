@@ -83,7 +83,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="planos.html">Planos</a>
+            <a class="nav-link" href="<?php echo $url; ?>/planos">Planos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo $url; ?>/contato">Contato</a>
@@ -92,7 +92,7 @@
           <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a>
+            <a class="btn btn-outline-primary ml-md-2" href="<?php echo $url; ?>/inscricao">Inscreva-se</a>
           </li>
         </ul>
       </div>
