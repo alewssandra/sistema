@@ -79,18 +79,16 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="local.html">California</a>
               <a class="dropdown-item" href="local.html">Paris</a>
-              <a class="dropdown-item" href="<?php echo $url; ?>/views/site/local/index.php">Dublin</a>
+              <a class="dropdown-item" href="<?php echo $url; ?>/local">Dublin</a>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="planos.html">Planos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contato.html">Contato</a>
+            <a class="nav-link" href="<?php echo $url; ?>/contato">Contato</a>
           </li>
           <li class="nav-item">
-            <!-- <a class="nav-link" href="<?php echo $url; ?>/dashboard/login">Login</a> -->
-
           <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
           </li>
           <li class="nav-item">

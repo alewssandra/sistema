@@ -22,4 +22,10 @@ class SiteController extends Controller
         $this->setLayout('site/shared/layout.php');
         $this->view('site/contato/index.php');
     }
+
+    public function local()
+    {
+        $this->setLayout('site/shared/layout.php');
+        $this->view('site/local/index.php');
+    }
 }
