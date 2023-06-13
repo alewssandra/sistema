@@ -39,7 +39,7 @@ class PDOCrud
     public function delete($table, $id)
     {
         // Monta a consulta de exclusão
-        $delete = 'DELETE FROM ' . $table . ' WHERE ID = ' . $id;
+        $delete = 'DELETE FROM ' . $table . ' WHERE id = :id';
         $stmt   = $this->pdo->prepare($delete);
         $result = $stmt->execute(array(
             ':id' => $id,

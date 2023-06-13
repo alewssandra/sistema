@@ -33,7 +33,7 @@ class PersonsCrud
                 $salt = sha1(rand());
 
                 $pdo = array_merge($pdo, array(
-                    ':password' => md5($password) . $salt,
+                    ':password' => md5($password),
                     ':salt'         => $salt,
                 ));
 
@@ -58,7 +58,7 @@ class PersonsCrud
                 ':document'     => $document,
                 ':gender'       => $gender,
                 ':description'  => $description,
-                ':password'     => md5($password) . $salt,
+                ':password'     => md5($password),
                 ':salt'         => $salt,
             );
 

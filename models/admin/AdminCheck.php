@@ -94,7 +94,8 @@ class AdminCheck
      */
     public function login($login, $password)
     {
-        if ($this->userChecker($login, $password)) {
+        $hashedPassword = md5($password);
+        if ($this->userChecker($login, $hashedPassword)) {
             return true;
         }
 

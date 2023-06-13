@@ -22,10 +22,17 @@ class AdminData{
      */
     public function getLogin($login){
 
-        return $this->pdoQuery->fetch("SELECT login FROM admin WHERE login = :login", array(
+        $adminLogin = $this->pdoQuery->fetch("SELECT login FROM admin WHERE login = :login", array(
             ':login' => $login,
         ));
 
+        if ($adminLogin) {
+            return $adminLogin;
+        }
+
+        return $this->pdoQuery->fetch("SELECT email FROM pessoas WHERE email = :login", array(
+            ':login' => $login,
+        ));
     }
 
     /**
@@ -36,10 +43,24 @@ class AdminData{
      */
     public function getUser($login){
 
-        return $this->pdoQuery->fetch("SELECT * FROM admin WHERE login = :login", array(
+        $adminLogin = $this->pdoQuery->fetch("SELECT * FROM admin WHERE login = :login", array(
             ':login' => $login,
         ));
 
+        if ($adminLogin) {
+            return $adminLogin;
+        }
+
+        $userLogin = $this->pdoQuery->fetch("SELECT * FROM pessoas WHERE email = :login", array(
+            ':login' => $login,
+        ));
+
+        return array(
+            "id" => $userLogin['id'],
+            "login" => $userLogin['email'],
+            "password" => $userLogin['senha'],
+            "name" => $userLogin['nome'],
+        );
     }
 
 }

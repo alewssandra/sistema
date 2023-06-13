@@ -3,8 +3,8 @@
 
         <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" id="dropwdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-user-circle"></i>
-                <?php echo $this->helpers['AdminSession']->get('name'); ?>
+                <i style="color: white;" class="fa fa-user-circle"></i>
+                <span style="color: white;"> <?php echo $this->helpers['AdminSession']->get('name'); ?> </span>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="<?php echo $url; ?>/logout">
