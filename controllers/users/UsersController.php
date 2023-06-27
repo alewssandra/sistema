@@ -48,6 +48,12 @@ class UsersController extends Controller
         $result = new PersonsCrud;
         $result = $result->removePerson($id);
 
+        //get the id from admin in session
+        $admin_id = $this->helpers['AdminSession']->get('id');
+
+        $logsData = new LogsData;
+        $logsData->addLog('Usuário removido', $admin_id);
+
         echo json_encode(array(
             'result' => $result
         ));

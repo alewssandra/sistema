@@ -10,8 +10,10 @@ class ContactsController extends Controller
     {
         $id = $_POST['id'];
 
+        $admin_id = $this->helpers['AdminSession']->get('id');
+
         $result = new ContactsCrud;
-        $result = $result->removeContact($id);
+        $result = $result->removeContact($id, $admin_id);
 
         echo json_encode(array(
             'result' => $result

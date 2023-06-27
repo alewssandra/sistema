@@ -30,8 +30,10 @@ class ContactsCrud
         return $this->pdoCrud->insert($this->table, $columns, $values, $pdo);
     }
 
-    public function removeContact($id)
+    public function removeContact($id, $pessoa_id)
     {
+        $this->logsData->addLog('Contato removido', $pessoa_id);
+
         return $this->pdoCrud->delete($this->table, $id);
     }
 
