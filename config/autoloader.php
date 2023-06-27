@@ -15,6 +15,7 @@ $paths = array(
     'models/login',
     'models/persons',
     'models/contacts',
+    'models/logs',
 );
 
 // Função anônima que será registrada como autoloader

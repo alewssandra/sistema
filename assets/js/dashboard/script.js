@@ -431,7 +431,7 @@
                     $('.contact-phone').html('');
                     $('.contact-message').html('');
 
-                    if (response.responseJSON.result) {
+                    if (response.responseJSON?.result) {
 
                         $('.contact-name').html(response.responseJSON.result['nome']);
                         $('.contact-email').html(response.responseJSON.result['email']);
@@ -441,7 +441,7 @@
                         $('#contactModal').modal('toggle');
 
                         div.parent().parent().find('.badge').removeClass('badge-danger').addClass('badge-success').html('Lido');
-
+                        
                     } else {
                         Swal.fire(
                             'Erro!',

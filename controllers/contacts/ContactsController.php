@@ -25,8 +25,10 @@ class ContactsController extends Controller
 
         $id = $_POST['id'];
 
+        $admin_id = $this->helpers['AdminSession']->get('id');
+
         $result = new ContactsData;
-        $result = $result->getContact($id);
+        $result = $result->getContact($id, $admin_id);
 
         echo json_encode(array(
             'result' => $result

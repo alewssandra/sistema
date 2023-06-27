@@ -19,7 +19,7 @@ class ContactsData
         return $sql;
     }
 
-    public function getContact($id)
+    public function getContact($id, $pessoa_id)
     {
 
         $sql = $this->pdoQuery->fetch("SELECT * FROM contatos WHERE id = :id", array(
@@ -27,7 +27,7 @@ class ContactsData
         ));
 
         if($sql){
-            $this->contactCrud->setReadedConctact($id);
+            $this->contactCrud->setReadedConctact($id, $pessoa_id);
         }
 
         return $sql;

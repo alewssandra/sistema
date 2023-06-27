@@ -17,3 +17,5 @@ ALTER TABLE `cadastro`
 ALTER TABLE `cadastro`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
+
+CREATE TABLE `sistema`.`logs` (`operacao` VARCHAR NOT NULL , `data` DATE NOT NULL , `pessoa_id` INT NOT NULL , `id` INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) 

@@ -7,6 +7,8 @@ define('ROOT', __DIR__);
 // Define a constante ENV com o valor do ambiente atual
 define('ENV', $env);
 
+error_reporting(E_ALL ^ E_DEPRECATED);
+
 // Inclui o arquivo de autoload das classes
 require 'config/autoloader.php';
 

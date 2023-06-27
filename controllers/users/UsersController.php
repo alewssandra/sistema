@@ -5,7 +5,7 @@
  * 
  * Controller responsável por lidar com as ações relacionadas aos usuários.
  */
-class UsersController
+class UsersController extends Controller
 {
     /**
      * Submete os dados do usuário e realiza ações correspondentes.
@@ -26,6 +26,12 @@ class UsersController
 
         $result = new PersonsCrud;
         $result = $result->submitform($id, $name, $email, $phone, $document, $gender, $description, $password, $photo);
+
+        //get the id from admin in session
+        $admin_id = $this->helpers['AdminSession']->get('id');
+
+        $logsData = new LogsData;
+        $logsData->addLog('Usuário adicionado', $admin_id);
 
         echo json_encode(array(
             'result' => $result
