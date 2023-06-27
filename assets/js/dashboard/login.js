@@ -63,7 +63,7 @@
 
                         if (response.responseJSON.result) {
 
-                            window.location.href = URL + "/dashboard";
+                            window.location.href = URL + "/dashboard/pessoas";
                             return true;
                         } else {
                             Swal.fire(

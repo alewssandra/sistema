@@ -15,14 +15,7 @@
         </div>
 
         <div class="sidebar-links">
-
             <ul>
-                <li>
-                    <a href="<?php echo $url; ?>/dashboard" class="<?php echo ($location == 'dashboard') ? 'active' : ''; ?>">
-                        <i class="fa fa-home"></i>
-                        Home
-                    </a>
-                </li>
                 <li>
                     <a href="<?php echo $url; ?>/dashboard/pessoas" class="<?php echo ($location == 'dashboardpessoas') ? 'active' : ''; ?>">
                         <i class="fa fa-user"></i>
