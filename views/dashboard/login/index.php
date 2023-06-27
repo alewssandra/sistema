@@ -47,10 +47,7 @@
                             <label for="Password">Senha</label>
                             <input type="password" class="form-control" name="password" id="Password" placeholder="Senha">
                         </div>
-
-                        <!-- Link para cadastro -->
-                        <p> Você não possui cadastro? <a href="<?php echo $url; ?>/dashboard/register/index.php" >Clique Aqui!</a></p>
-
+                        
                         <!-- Botão de login -->
                         <div class="btn btn-success btn-login">Entrar</div>
                     </form>

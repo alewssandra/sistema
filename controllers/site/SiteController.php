@@ -23,21 +23,20 @@ class SiteController extends Controller
         $this->view('site/contato/index.php');
     }
 
-    public function local()
+    public function dublin()
     {
         $this->setLayout('site/shared/layout.php');
-        $this->view('site/local/index.php');
+        $this->view('site/dublin/index.php');
     }
 
-    public function planos()
+    public function paris()
     {
         $this->setLayout('site/shared/layout.php');
-        $this->view('site/planos/index.php');
+        $this->view('site/paris/index.php');
     }
-
-    public function inscricao()
+    public function california()
     {
         $this->setLayout('site/shared/layout.php');
-        $this->view('site/inscricao/index.php');
+        $this->view('site/california/index.php');
     }
 }

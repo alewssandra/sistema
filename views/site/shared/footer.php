@@ -5,17 +5,15 @@
         <div class="col-md-3 col-6">
           <h4 class="h6">PÁGINAS</h4>
           <ul class="list-unstyled">
-            <li><a href="planos.html">Planos</a></li>
             <li><a href="contato.html">Contato</a></li>
-            <li><a href="inscricao.html">Inscreva-se</a></li>
           </ul>
         </div>
         <div class="col-md-3 col-6">
           <h4 class="h6">LOCAIS</h4>
           <ul class="list-unstyled">
-            <li><a href="local.html">California</a></li>
-            <li><a href="local.html">Paris</a></li>
-            <li><a href="local.html">Dublin</a></li>
+            <li><a href="<?php echo $url; ?>/california">California</a></li>
+            <li><a href="<?php echo $url; ?>/paris">Paris</a></li>
+            <li><a href="<?php echo $url; ?>/dublin">Dublin</a></li>
           </ul>
         </div>
         <div class="col-md-4">

@@ -41,9 +41,6 @@
                 <input type="password" class="form-control" name="password" id="Password" placeholder="Senha">
             </div>
 
-            <!-- Link para cadastro -->
-            <p> Você não possui cadastro? <a href="<?php echo $url; ?>/views/dashboard/register/index.php" >Clique Aqui!</a></p>
-
             <div class="btn btn-success btn-login">Entrar</div>
           </form>
         </div>
@@ -77,22 +74,16 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locais</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="local.html">California</a>
-              <a class="dropdown-item" href="local.html">Paris</a>
-              <a class="dropdown-item" href="<?php echo $url; ?>/local">Dublin</a>
+              <a class="dropdown-item" href="<?php echo $url; ?>/california">California</a>
+              <a class="dropdown-item" href="<?php echo $url; ?>/paris">Paris</a>
+              <a class="dropdown-item" href="<?php echo $url; ?>/dublin">Dublin</a>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo $url; ?>/planos">Planos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo $url; ?>/contato">Contato</a>
           </li>
           <li class="nav-item">
           <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-outline-primary ml-md-2" href="<?php echo $url; ?>/inscricao">Inscreva-se</a>
           </li>
         </ul>
       </div>

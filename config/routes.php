@@ -4,9 +4,9 @@
 $commonRoutes = array(
     '/'                             => 'SiteController/home',
     'contato'                       => 'SiteController/contato',
-    'local'                         => 'SiteController/local',
-    'planos'                        => 'SiteController/planos',
-    'inscricao'                     => 'SiteController/inscricao',
+    'dublin'                         => 'SiteController/dublin',
+    'paris'                         => 'SiteController/paris',
+    'california'                         => 'SiteController/california',
     'dashboard'                     => 'PanelController/home',
     'dashboard/login'               => 'PanelController/login',
     'logout'                        => 'PanelController/logout',

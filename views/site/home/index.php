@@ -93,7 +93,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
          </div>
       </div>
-      <a href="planos.html" class="btn btn-primary btn-lg mt-4">Comprar Plano</a>
    </div>
 </section>
 <section id="home-quote" class="p-md-5">
